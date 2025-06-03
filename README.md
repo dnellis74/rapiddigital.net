@@ -42,6 +42,15 @@ This will:
 3. Sync the dist directory to your S3 bucket
 4. Set appropriate permissions for public access
 
+## Email Configuration
+
+Email forwarding is configured using [ImprovMX](https://app.improvmx.com/). This service handles email forwarding for the domain, allowing emails sent to addresses like `hello@rapiddigital.net` to be forwarded to the appropriate destination email addresses.
+
+To modify email forwarding settings:
+1. Log in to [ImprovMX](https://app.improvmx.com/)
+2. Select the domain `rapiddigital.net`
+3. Configure forwarding rules as needed
+
 ## S3 Bucket Configuration
 
 Make sure your S3 bucket is configured for static website hosting with:

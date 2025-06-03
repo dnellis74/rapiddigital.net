@@ -6,7 +6,7 @@
     "build": "npm run clean && npm run copy",
     "clean": "rimraf dist",
     "copy": "mkdir -p dist && cp index.html dist/ && cp *.png dist/",
-    "deploy": "npm run build && aws s3 sync dist/ s3://rapiddigital.net --delete --acl public-read"
+    "deploy": "npm run build && aws s3 sync dist/ s3://rapiddigital.net --delete"
   },
   "devDependencies": {
     "rimraf": "^5.0.5"
