@@ -1,12 +1,11 @@
 # Rapid Digital Website
 
-This is the source code for the Rapid Digital website, hosted on AWS S3.
+This is the source code for the Rapid Digital website, hosted on AWS Amplify.
 
 ## Prerequisites
 
 1. Node.js and npm installed
-2. AWS CLI installed and configured with appropriate credentials
-3. S3 bucket created and configured for static website hosting
+2. AWS Amplify CLI installed and configured with appropriate credentials
 
 ## Setup
 
@@ -15,9 +14,9 @@ This is the source code for the Rapid Digital website, hosted on AWS S3.
 npm install
 ```
 
-2. Configure AWS CLI (if not already done):
+2. Configure AWS Amplify CLI (if not already done):
 ```bash
-aws configure
+amplify configure
 ```
 
 ## Development
@@ -31,16 +30,11 @@ This will create a `dist` directory with the built files.
 
 ## Deployment
 
-To deploy to S3:
-```bash
-npm run deploy
-```
-
-This will:
-1. Clean the dist directory
-2. Copy all necessary files to dist
-3. Sync the dist directory to your S3 bucket
-4. Set appropriate permissions for public access
+The site is automatically deployed through AWS Amplify when changes are pushed to the main branch. The deployment process:
+1. Cleans the dist directory
+2. Copies all necessary files to dist
+3. Deploys to AWS Amplify
+4. Configures the domain and SSL certificate
 
 ## Email Configuration
 
@@ -51,17 +45,16 @@ To modify email forwarding settings:
 2. Select the domain `rapiddigital.net`
 3. Configure forwarding rules as needed
 
-## S3 Bucket Configuration
+## Domain Configuration
 
-Make sure your S3 bucket is configured for static website hosting with:
-- Static website hosting enabled
-- Appropriate bucket policy for public access
-- Index document set to `index.html`
-- Error document set to `index.html` (for SPA routing if needed)
+The site is configured to use:
+- Main domain: rapiddigital.net
+- Subdomain: www.rapiddigital.net
+
+SSL certificates are automatically managed by AWS Amplify.
 
 ## Best Practices
 
-1. Always test the build locally before deploying
+1. Always test the build locally before pushing changes
 2. Use version control to track changes
-3. Consider implementing a CI/CD pipeline for automated deployments
-4. Keep your AWS credentials secure and never commit them to version control 
+3. Keep your AWS credentials secure and never commit them to version control 
