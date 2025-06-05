@@ -42,14 +42,14 @@ Email forwarding is configured using [ImprovMX](https://app.improvmx.com/). This
 
 To modify email forwarding settings:
 1. Log in to [ImprovMX](https://app.improvmx.com/)
-2. Select the domain `rapiddigital.net`
+2. Select the domain `rapiddigital.org`
 3. Configure forwarding rules as needed
 
 ## Domain Configuration
 
 The site is configured to use:
-- Main domain: rapiddigital.net
-- Subdomain: www.rapiddigital.net
+- Main domain: rapiddigital.org
+- Subdomain: www.rapiddigital.org
 
 SSL certificates are automatically managed by AWS Amplify.
 
