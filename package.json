@@ -2,13 +2,16 @@
   "name": "rapiddigital.net",
   "version": "1.0.0",
   "description": "Rapid Digital website",
+  "type": "module",
   "scripts": {
+    "dev": "vite",
     "build": "npm run clean && npm run copy",
     "clean": "rimraf dist",
-    "copy": "mkdir -p dist && cp *.html dist/ && cp styles.css dist/ && cp *.png dist/ && mkdir -p dist/payment && cp payment.html dist/payment/index.html",
-    "deploy": "npm run build"
+    "copy": "mkdir -p dist && cp *.html dist/ && cp styles.css dist/ && cp *.png dist/",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "rimraf": "^5.0.5"
+    "rimraf": "^5.0.5",
+    "vite": "^5.0.0"
   }
 } 

@@ -6,7 +6,7 @@ body {
     color: #222;
 }
 
-.logo {
+.image {
     max-width: 300px;
     height: auto;
     margin: 0 auto 2em;
@@ -130,4 +130,12 @@ footer {
 .payment-anchor {
     text-align: center;
     margin: 2em 0;
+}
+
+.what-we-do-img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1em;
 } 
