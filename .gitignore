@@ -41,4 +41,11 @@ yarn-error.log*
 .npm
 
 # Optional eslint cache
-.eslintcache 
+.eslintcache
+
+# Ignore the build output
+_site/
+
+# Ignore the cache (speeds up local builds, but shouldn't be shared)
+.jekyll-cache/
+.jekyll-metadata

@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payment Options - Rapid Digital</title>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-
-<body>
-    <header>
-        <img src="/rdlogo.png" alt="Rapid Digital" class="logo">
-        <h1>Payment Options</h1>
-        <p>Choose your preferred payment method below</p>
-    </header>
+---
+layout: default
+title: Payment Options - Rapid Digital
+hero_title: "Payment Options"
+---
+<section>
+    <p>Choose your preferred payment method below</p>
 
     <div id="payment-options" class="payment-container">
         <div class="payment-option">
@@ -52,21 +43,4 @@
             <button class="copy-button" onclick="copyToClipboard('0x65557CBB859625812D12AcB39cAF6CCb77de1467')">Copy Address</button>
         </div>
     </div>
-
-    <footer>
-        <a href="/" class="back-link">← Back to Home</a>
-        <p>&copy; 2025 Rapid Digital. Built for small business, not big tech.</p>
-    </footer>
-
-    <script>
-        function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                alert('Copied to clipboard!');
-            }).catch(err => {
-                console.error('Failed to copy text: ', err);
-            });
-        }
-    </script>
-</body>
-
-</html> 
+</section>
